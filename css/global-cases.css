@@ -1,0 +1,63 @@
+body{
+  background-color: #323232;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.container-fluid{
+    padding-top: 12px;
+}
+
+.font{
+    color: #fff;
+    font-size: 19px;
+    padding-left: 14px;
+    padding-top: 35px;
+    
+}
+.teal {
+    background-color: #5a5a5a !important;
+}
+.span-t{
+    color: gainsboro;
+
+}
+
+nav {
+    color: #fff;
+    background-color: #121212;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+.txt{
+    font-size: x-large;
+    color: white;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 18px;
+}
+
+.blue-grey.darken-1 {
+    background-color: #5a5a5a !important;
+}
+
+.pt-1{
+    padding-top: 5px;
+}
+
+
+.imgs{
+    background: url('/imgs/WHO-990x651.jpg') no-repeat center;
+    background-position: center;
+    background-size: cover;
+}
+
+.sidenav .user-view .name {
+    margin-top: 58px;
+    font-weight: 500;
+}

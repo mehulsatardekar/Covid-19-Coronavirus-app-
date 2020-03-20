@@ -1,0 +1,41 @@
+body{
+    background-color: #000000;
+}
+
+
+nav {
+    color: #fff;
+    background-color: #525252;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+
+.teal {
+    background-color: #323232 !important;
+
+}
+
+.card-title{
+    color: white;
+    font-size: xx-large;
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+.ht-p{
+    padding-top: 112px;
+    padding-left: 12px;
+}
+
+.card-titles{
+    color: white;
+    font-size: 20px;
+}
+
+.g {
+    color: #ffffff !important;
+}
