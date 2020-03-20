@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Null-ds</title>
+    <link rel="icon" href="/imgs/WHO-990x651.jpg">
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/global-cases.css">
+</head>
+<body>
+    
+ 
+    <nav> <!-- navbar content here  -->
+    
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <div class="nav-wrapper">
+            <a href="#." class="brand-logo">Covid-19</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="/html/global-cases.html">Global-cases</a></li>
+              <li><a href="/html/country-cases.html">Countries-cases</a></li>
+              <li><a href="/html/aboutme.html">About</a></li>
+            </ul>
+          </div>
+      
+    </nav>
+    <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background imgs">
+        
+        </div>
+        <a href="#user"><img class="circle" src="/imgs/WHO-990x651.jpg"></a>
+        <a href="https://www.who.int/"><span class="white-text name ">who.int</span></a>
+        <a href="#email"><span class="white-text email">World Health Organization</span></a>
+      </div></li>
+      <li><div class="divider"></div></li>
+      <li><a href="/html/global-cases.html"><i class="material-icons">
+        language
+        </i>
+        Global</a></li>
+      <li><div class="divider"></div></li>
+      <li><a href="/html/country-cases.html"><i class="material-icons">
+        emoji_flags
+        </i>Countries</a></li>
+      <li><div class="divider"></div></li>
+      <li><a href="/html/aboutme.html"><i class="material-icons">
+        track_changes
+        </i>About</a></li>
+
+    </ul>
+          
+
+
+  
+    
+     
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script>
+
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.tap-target').tapTarget();
+    $(".dropdown-trigger").dropdown();
+
+  });
+
+
+  
+    </script>
+</body>
+</html>

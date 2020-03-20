@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>country-cases</title>
+    <link rel="icon" href="/imgs/WHO-990x651.jpg">
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/country-cases.css">
+</head>
+<body>
+
+  <div id="menu">
+
+  </div>
+    <div class="container-fluid" style="
+    margin-top: 0px;" >
+        <nav>
+            <div class="nav-wrapper" id="search-targ">
+              <form>
+                <div class="input-field">
+                  <input id="search" type="search" class="label-icon" for="search" placeholder="Search Countries" required>
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                 
+                </div>
+              </form>
+            </div>
+          </nav>
+          <span class="card-titles font ht-p">Coronavirus By Country.</span>
+
+
+
+  <div class="row" id="results">
+ 
+   
+  </div>
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red" href="#search-targ">
+      <i class="large material-icons" >keyboard_arrow_up</i>
+    </a>
+   
+  </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+    //adds menu.html content into any "#menu" element
+        $('#menu').load('/html/masterpage.html');
+    });
+    </script>
+    
+    <script src="/js/country-cases.js"></script>
+
+
+<script src="/js/jquery.searcher.js"></script>
+
+
+    <script>
+			$("#results").searcher({
+				itemSelector: ".col",
+				textSelector: ".card-title",
+				inputSelector: "#search",
+				highlight: "<span class='highlight'>$1</span>",
+				toggle: function(item, containsText) {
+					if (containsText)
+						$(item).fadeIn();
+					else
+						$(item).fadeOut();
+				}
+			});
+		</script>
+
+</body>
+</html>
